@@ -1,0 +1,308 @@
+Task 1: Simple Programs to do for variables
+
+1. Declare four variables without assigning values and print them in console :
+
+var variable1;
+var variable2;
+var variable3;
+var variable4;
+
+console.log(variable1);
+console.log(variable2);
+console.log(variable3);
+console.log(variable4);
+
+-------------------------------------------------------------------------------
+
+2. How to get value of the variable myvar as output :
+
+var myvar= 1;
+console.log("myvar");
+
+By Removing "" in console.log
+
+Solution : var myvar = 1;
+           console.log(myvar);
+
+-------------------------------------------------------------------------------
+
+3. Declare variables to store your first name, last name, marital status, country and age in multiple lines :
+
+var first_name = "Santhosh";
+var last_name = "Surya";
+var marital_status = "Single";
+var country = "India";
+var age = 22;
+
+-------------------------------------------------------------------------------
+
+4. Declare variables to store your first name, last name, marital status, country and age in a single line :
+
+var first_name = "Santhosh", last_name = "Surya", marital_status = "Single", country = "India", age = 22;
+
+-------------------------------------------------------------------------------
+
+5. Declare variables and assign string, boolean, undefined and null data types
+
+var myAge = 25; // This variable holds an Integer value (number).
+var yourAge = 30;
+
+var statement = "I am 25 years old."; // This variable holds a string.
+var statement2 = "You are 30 years old."; 
+
+var isAdult = true; // This variable holds a Boolean value.
+
+var undefinedVariable; // This variable is declared but not assigned a value.
+
+var nullValue = null; // This variable holds the value 'null'.
+
+-------------------------------------------------------------------------------
+
+6. Convert the string to integer
+
+-->Using parseInt():
+var age= "25";
+var Result = parseInt(age); 
+console.log(Result);
+
+-->Using Number():
+var age = "25";
+var Result = Number(age);
+console.log(Result);
+
+-->Using Plus sign(+):
+var age = "25";
+var Result = +age;
+console.log(Result);
+
+-------------------------------------------------------------------------------
+
+7. Write 6 statement which provide truthy & falsey values :
+
+Truthy Values:
+
+1. const truthyString = "Hello,GUVI";
+   - A non-empty string is a truthy value in JavaScript.
+
+2. const truthyNumber = 42;
+   - A non-zero number is a truthy value.
+
+3. const truthyArray = [1, 2, 3];
+   - A non-empty array is a truthy value.
+
+Falsy Values:
+
+4. const falsyString = "";
+   - An empty string is a falsy value.
+
+5. const falsyNumber = 0;
+   - The number zero is a falsy value.
+
+6. const falsyNull = null;
+   - `null` is a falsy value in JavaScript.
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Task 2: Simple Programs todo for Operators
+
+1. Square of a number :
+
+var number = 5;
+var squarevalue = number * number;
+
+console.log("The square of", number, "is", squarevalue);
+
+-------------------------------------------------------------------------------
+
+2. Swapping 2 numbers :
+
+let a = 50;
+let b = 60;
+
+console.log("Before swapping:");
+console.log("a =", a);
+console.log("b =", b);
+
+// Swap the values using a temporary variable
+let temp = a;
+a = b;
+b = temp;
+
+console.log("After swapping:");
+console.log("a =", a);
+console.log("b =", b);
+
+-------------------------------------------------------------------------------
+
+3. Addition of 3 numbers :
+
+var num1 = 50;
+var num2 = 60;
+var num3 = 09;
+
+var sum = num1 + num2 + num3;
+
+console.log("The sum of", num1, "+", num2, "+", num3, "is", sum);
+
+-------------------------------------------------------------------------------
+
+4. Celsius to Fahrenheit conversion
+
+function celsiusToFahrenheit(celsius) {
+  var fahrenheit = (celsius * 9/5) + 32;
+  return fahrenheit;
+}
+var celsiusTemperature = 50; 
+var fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
+console.log(celsiusTemperature + "°C is equal to " + fahrenheitTemperature + "°F");
+
+-------------------------------------------------------------------------------
+
+5. Meter to miles :
+
+function metersToMiles(meters) {
+  var miles = meters * 0.000621371;
+  return miles;
+}
+var metersDistance = 5060; 
+var milesDistance = metersToMiles(metersDistance);
+console.log(metersDistance + " meters is equal to " + milesDistance + " miles");
+
+-------------------------------------------------------------------------------
+
+6. Pounds to kg :
+
+function poundsToKilograms(pounds) {
+  var kilograms = pounds * 0.45359237;
+  return kilograms;
+}
+var poundsWeight = 133;
+var kilogramsWeight = poundsToKilograms(poundsWeight);
+console.log(poundsWeight + " pounds is equal to " + kilogramsWeight + " kilograms");
+
+-------------------------------------------------------------------------------
+
+7. Calculate Batting Average :
+
+function calculateBattingAverage(totalRunsScored, totalDismissals) {
+  if (totalDismissals === 0) {
+    return "N/A"; 
+  }
+
+  var battingAverage = totalRunsScored / totalDismissals;
+  return battingAverage.toFixed(2); 
+}
+
+// Example usage:
+var runsScored = 750;
+var dismissals = 15; 
+var average = calculateBattingAverage(runsScored, dismissals);
+
+console.log("Batting Average: " + average);
+
+-------------------------------------------------------------------------------
+
+8. Calculate five test scores and print their average :
+
+var score1 = 85;
+var score2 = 92;
+var score3 = 78;
+var score4 = 90;
+var score5 = 88;
+
+var totalScore = score1 + score2 + score3 + score4 + score5;
+var averageScore = totalScore / 5;
+
+console.log("Average Score: " + averageScore);
+
+-------------------------------------------------------------------------------
+
+9. Power of any number x ^ y :
+
+var x = 9;
+var y = 9;
+
+var result = Math.pow(x, y);
+
+console.log(x + " raised to the power " + y + " is equal to " + result);
+
+-------------------------------------------------------------------------------
+
+10. Calculate Simple Interest :
+
+var principalAmount = 60000; 
+var rateOfInterest = 5; 
+var timeInYears = 1; 
+
+var simpleInterest = (principalAmount * rateOfInterest * timeInYears) / 100;
+
+console.log("Principal Amount: ₹" + principalAmount);
+console.log("Rate of Interest: " + rateOfInterest + "% per annum");
+console.log("Time in Years: " + timeInYears + " years");
+console.log("Simple Interest: ₹" + simpleInterest);
+
+-------------------------------------------------------------------------------
+
+11. Calculate area of an equilateral triangle :
+
+var sideLength = 5;
+
+var area = (Math.pow(sideLength, 2) * Math.sqrt(3)) / 4;
+console.log("Side Length: " + sideLength);
+console.log("Area of the Equilateral Triangle: " + area);
+
+-------------------------------------------------------------------------------
+
+12.Area Of Isosceles Triangle :
+
+var base = 8; 
+var height = 6; 
+
+var area = (1/2) * base * height;
+
+console.log("Base Length: " + base);
+console.log("Height: " + height);
+console.log("Area of the Isosceles Triangle: " + area);
+
+-------------------------------------------------------------------------------
+
+13. Volume Of Sphere :
+
+var radius = 5;
+
+var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+
+console.log("Radius: " + radius);
+console.log("Volume of the Sphere: " + volume);
+
+-------------------------------------------------------------------------------
+
+14. Volume Of Prism :
+
+
+var length = 6; 
+var width = 4; 
+var height = 8;
+
+var baseArea = length * width;
+
+var volume = baseArea * height;
+
+console.log("Base Length: " + length);
+console.log("Base Width: " + width);
+console.log("Height: " + height);
+console.log("Volume of the Prism: " + volume);
+
+-------------------------------------------------------------------------------
+
+15. Find area of a triangle :
+
+var base = 6;
+var height = 4;
+
+var area = (1/2) * base * height;
+
+console.log("Base Length: " + base);
+console.log("Height: " + height);
+console.log("Area of the Triangle: " + area);
