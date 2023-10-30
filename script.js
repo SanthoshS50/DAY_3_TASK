@@ -6,27 +6,18 @@
    
 //To compare two JSON objects that have the same properties but may not be in the same order, you can follow these steps:
 
-/* 1. Convert both JSON objects to strings.
-   2. Sort the keys of both objects.
-   3. Compare the sorted JSON strings to check for equality */
-
-    function JsonEqual(obj1, obj2) {
-    // Convert the JSON objects to strings
-    const str1 = JSON.stringify(obj1);
-    const str2 = JSON.stringify(obj2);
-
-    // Sort the keys of the JSON strings
-    const sortedStr1 = JSON.stringify(JSON.parse(str1), Object.keys(obj1).sort());
-    const sortedStr2 = JSON.stringify(JSON.parse(str2), Object.keys(obj2).sort());
-
-    // Compare the sorted JSON strings for equality
-    return sortedStr1 === sortedStr2;
-}
+/* 1. Convert both Objects to JSON.
+   2. Compare both the JSON to check for equality */
 
 let obj1 = { name: "Person 1", age: 5 };
 let obj2 = { age: 5, name: "Person 1" };
 
-if (JsonEqual(obj1, obj2)) {
+// Convert the JSON objects to strings
+
+let JSON1 = JSON.stringify(obj1);
+let JSON2 = JSON.stringify(obj2);
+
+if (JSON1 === JSON2) {
     console.log("The JSON objects are equal.");
 } else {
     console.log("The JSON objects are not equal.");
